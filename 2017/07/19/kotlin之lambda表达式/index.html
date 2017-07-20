@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="kotlin in actionLambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click */ } 2) provide a good, convenient library for working">
+<meta name="description" content="title: kotin之lambda表达式date : 2017.7.20tags: kotlin—# kotlin in action Lambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2017/07/19/kotlin之lambda表达式/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="kotlin in actionLambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click */ } 2) provide a good, convenient library for working">
-<meta property="og:updated_time" content="2017-07-20T03:41:30.000Z">
+<meta property="og:description" content="title: kotin之lambda表达式date : 2017.7.20tags: kotlin—# kotlin in action Lambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click">
+<meta property="og:updated_time" content="2017-07-20T04:46:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="kotlin in actionLambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click */ } 2) provide a good, convenient library for working">
+<meta name="twitter:description" content="title: kotin之lambda表达式date : 2017.7.20tags: kotlin—# kotlin in action Lambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click">
 
 
 
@@ -202,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Accueil
+            Startseite
           </a>
         </li>
       
@@ -212,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -282,7 +282,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-19T21:53:40+08:00">
                 2017-07-19
@@ -319,7 +319,9 @@
       
 
       
-        <h1 id="kotlin-in-action"><a href="#kotlin-in-action" class="headerlink" title="kotlin in action"></a>kotlin in action</h1><h2 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h2><h3 id="1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><a href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter" class="headerlink" title="1) effectively, pass a block of code directly as a method parameter."></a>1) effectively, pass a block of code directly as a method parameter.</h3><p>Example:<br><code>button.setOnClickListener { /* actions on click */ }</code></p>
+        <hr>
+<p>title: kotin之lambda表达式<br>date : 2017.7.20<br>tags: kotlin<br>—# kotlin in action</p>
+<h2 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h2><h3 id="1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><a href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter" class="headerlink" title="1) effectively, pass a block of code directly as a method parameter."></a>1) effectively, pass a block of code directly as a method parameter.</h3><p>Example:<br><code>button.setOnClickListener { /* actions on click */ }</code></p>
 <h3 id="2-provide-a-good-convenient-library-for-working-with-collections"><a href="#2-provide-a-good-convenient-library-for-working-with-collections" class="headerlink" title="2) provide a good, convenient library for working with collections."></a>2) provide a good, convenient library for working with collections.</h3><p>Example:<br><code>val people = listOf(Person(&quot;Alice&quot;, 29), Person(&quot;Bob&quot;, 31))
 people.maxBy { it.age })</code><br>If a lambda just delegates to a method or property, it can be replaced by a member reference:<br><code>people.maxBy(Person::age)</code></p>
 <h3 id="3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments"><a href="#3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments" class="headerlink" title="3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):"></a>3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):</h3><p>Example:<br><code>val sum = { x: Int, y: Int -&gt; x + y }
@@ -328,12 +330,12 @@ people.maxBy { it.age })</code><br>If a lambda just delegates to a method or pro
 ... println(&quot;Computing the sum of $x and $y&quot;) ... x+y
 ... }
 println(sum(1, 2))
-$gt; Computing the sum of 1 and 2... 3</code></p>
+Computing the sum of 1 and 2... 3</code></p>
 <h3 id="6-you-can-access-the-parameters-of-that-function-as-well-as-the-local-variables-declared-before-the-lambda"><a href="#6-you-can-access-the-parameters-of-that-function-as-well-as-the-local-variables-declared-before-the-lambda" class="headerlink" title="6) you can access the parameters of that function as well as the local variables declared before the lambda."></a>6) you can access the parameters of that function as well as the local variables declared before the lambda.</h3><p>Example:<br><code>fun printMessagesWithPrefix(messages: Collection&lt;String&gt;, prefix: String) { messages.forEach {
 println(&quot;$prefix $it&quot;) }
 }
-&amp;gt; val errors = listOf(&quot;403 Forbidden&quot;, &quot;404 Not Found&quot;)
-&amp;gt; printMessagesWithPrefix(errors, &quot;Error:&quot;) Error: 403 Forbidden
+ val errors = listOf(&quot;403 Forbidden&quot;, &quot;404 Not Found&quot;)
+ printMessagesWithPrefix(errors, &quot;Error:&quot;) Error: 403 Forbidden
 Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final variables and even modify them in a lambda. External variables accessed from a lambda.<br>An important caveat is that, if a lambda is used as an event handler or is otherwise executed asynchronously, the modifications to local variables will occur only when the lambda is executed.</p>
 <h3 id="7-The-member-reference-salute-is-passed-as-an-argument-to-the-library-function-run-which-calls-the-corresponding-function"><a href="#7-The-member-reference-salute-is-passed-as-an-argument-to-the-library-function-run-which-calls-the-corresponding-function" class="headerlink" title="7) The member reference ::salute is passed as an argument to the library function run, which calls the corresponding function."></a>7) The member reference ::salute is passed as an argument to the library function run, which calls the corresponding function.</h3><p>You can store or postpone the action of creating an instance of a class using a constructor reference.<br>Note that you can also reference extension functions the same way:<br>Example:<br><code>fun Person.isAdult() = age &gt;= 21 val predicate = Person::isAdult</code></p>
 <h3 id="8）Functional-APIs-for-collections"><a href="#8）Functional-APIs-for-collections" class="headerlink" title="8）Functional APIs for collections."></a>8）Functional APIs for collections.</h3><h4 id="fiflter-The-filter-function-transforms-a-collection-and-filters-out-elements-that-don’t-satisfy-the-given-predicate"><a href="#fiflter-The-filter-function-transforms-a-collection-and-filters-out-elements-that-don’t-satisfy-the-given-predicate" class="headerlink" title="fiflter   The filter function transforms a collection and filters out elements that don’t satisfy the given predicate."></a><em>fiflter</em>   The <em>filter</em> function transforms a collection and filters out elements that don’t satisfy the given predicate.</h4><p>Example:<br><code>val list = listOf(1, 2, 3, 4)
@@ -341,14 +343,14 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
 <h4 id="map-The-map-function-applies-the-given-function-to-each-element-in-the-collection-and-collects-the-results-into-a-new-collection"><a href="#map-The-map-function-applies-the-given-function-to-each-element-in-the-collection-and-collects-the-results-into-a-new-collection" class="headerlink" title="map The map function applies the given function to each element in the collection and collects the results into a new collection."></a><em>map</em> The map function applies the given function to each element in the collection and collects the results into a new collection.</h4><p>Example:<br><code>val list = listOf(1, 2, 3, 4) 
  list.map { it * it }
  [1, 4, 9, 16]</code></p>
-<h4 id="filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values"><a href="#filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values" class="headerlink" title="filterKeys and mapKeys filter and transform the keys of a map, respectively, whereas filterValues and mapValues filter and transform the corresponding values."></a><em>filterKeys</em> and <em>mapKeys</em> filter and transform the keys of a map, respectively, whereas <em>filterValues</em> and <em>mapValues</em> filter and transform the corresponding values.</h4><h4 id="all-any-count-and-find-applying-a-predicate-to-a-collection"><a href="#all-any-count-and-find-applying-a-predicate-to-a-collection" class="headerlink" title="all, any, count, and find: applying a predicate to a collection."></a><em>all</em>, <em>any</em>, <em>count</em>, and <em>find</em>: applying a predicate to a collection.</h4><h4 id="groupBy-converting-a-list-to-a-map-of-groups"><a href="#groupBy-converting-a-list-to-a-map-of-groups" class="headerlink" title="groupBy: converting a list to a map of groups."></a>groupBy: converting a list to a map of groups.</h4><p>Example:<br><code>&gt;&gt;&gt; val people = listOf(Person(&quot;Alice&quot;, 31),
-... Person(&quot;Bob&quot;, 29), Person(&quot;Carol&quot;, 31)) &gt;&gt;&gt; println(people.groupBy { it.age })
+<h4 id="filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values"><a href="#filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values" class="headerlink" title="filterKeys and mapKeys filter and transform the keys of a map, respectively, whereas filterValues and mapValues filter and transform the corresponding values."></a><em>filterKeys</em> and <em>mapKeys</em> filter and transform the keys of a map, respectively, whereas <em>filterValues</em> and <em>mapValues</em> filter and transform the corresponding values.</h4><h4 id="all-any-count-and-find-applying-a-predicate-to-a-collection"><a href="#all-any-count-and-find-applying-a-predicate-to-a-collection" class="headerlink" title="all, any, count, and find: applying a predicate to a collection."></a><em>all</em>, <em>any</em>, <em>count</em>, and <em>find</em>: applying a predicate to a collection.</h4><h4 id="groupBy-converting-a-list-to-a-map-of-groups"><a href="#groupBy-converting-a-list-to-a-map-of-groups" class="headerlink" title="groupBy: converting a list to a map of groups."></a>groupBy: converting a list to a map of groups.</h4><p>Example:<br><code>val people = listOf(Person(&quot;Alice&quot;, 31),
+... Person(&quot;Bob&quot;, 29), Person(&quot;Carol&quot;, 31))                        println(people.groupBy { it.age })
 {29=[(name=Bob, age=29)],
 31=[Person(name=Alice, age=31), Person(name=Carol, age=31)]}</code></p>
 <h4 id="flatMap-and-flatten-processing-elements-in-nested-collections"><a href="#flatMap-and-flatten-processing-elements-in-nested-collections" class="headerlink" title="flatMap and flatten: processing elements in nested collections."></a><em>flatMap</em> and <em>flatten</em>: processing elements in nested collections.</h4><p>The flatMap function does two things: at  first it transforms(or maps) each element to a collection according to the function given as an argument, and then it combines (or flattens) several lists into one.<br>Example:<br><code>val strings = listOf(&quot;abc&quot;, &quot;def&quot;)
-&amp;gt; println(strings.flatMap { it.toList() })
+ println(strings.flatMap { it.toList() })
  [a, b, c, d, e, f]</code><br> The <em>toList()</em>  function on a string converts it into a list of characters.</p>
-<h4 id="Lazy-collection-operations-sequences"><a href="#Lazy-collection-operations-sequences" class="headerlink" title="Lazy collection operations: sequences."></a>Lazy collection operations: sequences.</h4><ol>
+<h3 id="9）Lazy-collection-operations-sequences"><a href="#9）Lazy-collection-operations-sequences" class="headerlink" title="9）Lazy collection operations: sequences."></a>9）Lazy collection operations: sequences.</h3><ol>
 <li>Converts the initial collection to Sequence </li>
 <li>Sequences support the same API as collections. </li>
 <li>Converts the resulting Sequence back into a list<br>Example:<br><code>people.asSequence()
@@ -360,8 +362,49 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
 <p> <em>generateSequence()</em> function:This function calculates the next element in a sequence given the previous one.<br> Example;<br> <code>val naturalNumbers = generateSequence(0) { it + 1 }
   val numbersTo100 = naturalNumbers.takeWhile { it &lt;= 100 }
   println(numbersTo100.sum()) 
-  &amp;gt; 5050</code></p>
-<h4 id="Passing-a-lambda-as-a-parameter-to-a-Java-method"><a href="#Passing-a-lambda-as-a-parameter-to-a-Java-method" class="headerlink" title="Passing a lambda as a parameter to a Java method."></a>Passing a lambda as a parameter to a Java method.</h4><p>Example:<br>java<br><code>void postponeComputation(int delay, Runnable computation);</code><br>kotlin<br><code>postponeComputation(1000) { println(42) }</code></p>
+   5050</code></p>
+<h3 id="10）Passing-a-lambda-as-a-parameter-to-a-Java-method"><a href="#10）Passing-a-lambda-as-a-parameter-to-a-Java-method" class="headerlink" title="10）Passing a lambda as a parameter to a Java method."></a>10）Passing a lambda as a parameter to a Java method.</h3><p>Example:<br>java<br><code>void postponeComputation(int delay, Runnable computation);</code><br>kotlin<br><code>postponeComputation(1000) { println(42) }</code></p>
+<h3 id="11）SAM-constructors-explicit-conversion-of-lambdas-to-functional-interfaces"><a href="#11）SAM-constructors-explicit-conversion-of-lambdas-to-functional-interfaces" class="headerlink" title="11）SAM constructors: explicit conversion of lambdas to functional interfaces."></a>11）SAM constructors: explicit conversion of lambdas to functional interfaces.</h3><p>In addition to returning values, SAM constructors are used when you need to store a functional interface instance generated from a lambda in a variable.<br>Example:<br><code>val listener = OnClickListener { view -&gt;
+val text = when (view.id) { R.id.button1 -&gt; &quot;First button&quot; R.id.button2 -&gt; &quot;Second button&quot; else -&gt; &quot;Unknown button&quot;
+}
+toast(text) }
+button1.setOnClickListener(listener) button2.setOnClickListener(listener)</code><br><em>in an Android application,this code can be a part of the Activity.onCreate method</em></p>
+<h3 id="12-Lambdas-with-receivers-with-and-apply"><a href="#12-Lambdas-with-receivers-with-and-apply" class="headerlink" title="12)Lambdas with receivers: with and apply"></a>12)Lambdas with receivers: <em>with</em> and <em>apply</em></h3><p>a unique feature of Kotlin’s lambdas that isn’t available with Java: the ability to call methods of a different object in the body of a lambda without any additional qualifiers. Such lambdas are called <em>lambdas with receivers</em>.</p>
+<h4 id="The-with-function-you-can-use-to-perform-multiple-operations-on-the-same-object-without-repeating-its-name"><a href="#The-with-function-you-can-use-to-perform-multiple-operations-on-the-same-object-without-repeating-its-name" class="headerlink" title="The with function:you can use to perform multiple operations on the same object without repeating its name"></a>The <em>with</em> function:you can use to perform multiple operations on the same object without repeating its name</h4><p>Example:<br><code>fun alphabet(): String {
+val stringBuilder = StringBuilder()
+return with(stringBuilder)
+{ for (letter in &#39;A&#39;..&#39;Z&#39;) {
+this.append(letter) }
+append(&quot;\nNow I know the alphabet!&quot;)
+this.toString() }
+}</code><br>The <em>with</em> function converts its first argument into a receiver of the lambda that’s passedasasecondargument.<br>A lambda is a way to define behavior similar to a regular function, and a lambda with a receiver is a way to define behavior similar to an extension function.</p>
+<h3 id="the-apply-function-The-apply-function-works-almost-exactly-the-same-as-with-the-only-difference-is-that-apply-always-returns-the-object-passed-to-it-as-a-parameter-in-other-words-the-receiverobject"><a href="#the-apply-function-The-apply-function-works-almost-exactly-the-same-as-with-the-only-difference-is-that-apply-always-returns-the-object-passed-to-it-as-a-parameter-in-other-words-the-receiverobject" class="headerlink" title="the apply function:The apply function works almost exactly the same as with; the only difference is that apply() always returns the object passed to it as a parameter (in other words, the receiverobject)."></a>the <em>apply</em> function:The apply function works almost exactly the same as with; the only difference is that apply() always returns the object passed to it as a parameter (in other words, the receiverobject).</h3><p>Example:<br><code>fun alphabet() = StringBuilder().apply { for (letter in &#39;A&#39;..&#39;Z&#39;) {
+append(letter) }
+append(&quot;\nNow I know the alphabet!&quot;) }.toString()</code><br>As you can see, <em>apply</em> is an extension function. The receiver of this function becomes the receiver of the lambda passed as anargument.</p>
+<p><em>apply</em> allows you to use the compact expression body style for the function<code>fun createViewWithCustomAttributes(context: Context) =
+TextView(context).apply { text = &quot;Sample
+Text&quot; textSize = 20.0
+setPadding(10, 0, 0, 0) }</code></p>
+<h2 id="SUMMARY"><a href="#SUMMARY" class="headerlink" title="SUMMARY"></a>SUMMARY</h2><h5 id="Lambdas-allow-you-to-pass-chunks-of-code-as-parameters-to-methods"><a href="#Lambdas-allow-you-to-pass-chunks-of-code-as-parameters-to-methods" class="headerlink" title="* Lambdas allow you to pass chunks of code as parameters to methods."></a>* Lambdas allow you to pass chunks of code as parameters to methods.</h5><ol>
+<li><p>Kotlin lets you pass lambdas to methods outside of parentheses and refer to a single<br>lambda parameter as it.</p>
+</li>
+<li><p>Code in a lambda can access and modify variables in the function containing the call to<br>the lambda.</p>
+</li>
+<li><p>You can create references to methods, constructors, and properties by prefixing the name of the function with ::, and pass such references to methods instead of lambdas.</p>
+</li>
+<li><p>Most common operations with collections can be performed without manually iterating over elements, using functions such as filter, map, all, any, and so on.</p>
+</li>
+<li><p>Sequences allow you to combine multiple operations on a collection without creating collections to hold intermediate results.</p>
+</li>
+<li><p>You can pass lambdas as arguments to methods that take a Java functional interface (an interface with a single abstract method, also known as a SAM interface) as a parameter.</p>
+</li>
+<li><p>Lambdas with receivers are lambdas in which you can directly call methods on a special receiver object.</p>
+</li>
+<li><p>The with standard library function allows you to call multiple methods on the same </p>
+</li>
+<li><p>objectwithoutrepeatingthereferencetotheobject.apply letsyouconstructand initialize any object using a builder-style API</p>
+</li>
+</ol>
 
       
     </div>
@@ -456,10 +499,10 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table Des Matières
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Ensemble
+            Übersicht
           </li>
         </ul>
       
@@ -480,7 +523,7 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">articles</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -493,7 +536,7 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               
             </div>
           
@@ -527,7 +570,7 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#kotlin-in-action"><span class="nav-number">1.</span> <span class="nav-text">kotlin in action</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lambda"><span class="nav-number">1.1.</span> <span class="nav-text">Lambda</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><span class="nav-number">1.1.1.</span> <span class="nav-text">1) effectively, pass a block of code directly as a method parameter.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-provide-a-good-convenient-library-for-working-with-collections"><span class="nav-number">1.1.2.</span> <span class="nav-text">2) provide a good, convenient library for working with collections.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments"><span class="nav-number">1.1.3.</span> <span class="nav-text">3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-As-with-local-variables-if-the-type-of-a-lambda-parameter-can-be-inferred-you-don’t-need-to-specify-it-explicitly"><span class="nav-number">1.1.4.</span> <span class="nav-text">4) As with local variables, if the type of a lambda parameter can be inferred, you don’t need to specify it explicitly.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Runs-the-code-in-the-lambda"><span class="nav-number">1.1.5.</span> <span class="nav-text">5)Runs the code in the lambda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-you-can-access-the-parameters-of-that-function-as-well-as-the-local-variables-declared-before-the-lambda"><span class="nav-number">1.1.6.</span> <span class="nav-text">6) you can access the parameters of that function as well as the local variables declared before the lambda.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-The-member-reference-salute-is-passed-as-an-argument-to-the-library-function-run-which-calls-the-corresponding-function"><span class="nav-number">1.1.7.</span> <span class="nav-text">7) The member reference ::salute is passed as an argument to the library function run, which calls the corresponding function.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8）Functional-APIs-for-collections"><span class="nav-number">1.1.8.</span> <span class="nav-text">8）Functional APIs for collections.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#fiflter-The-filter-function-transforms-a-collection-and-filters-out-elements-that-don’t-satisfy-the-given-predicate"><span class="nav-number">1.1.8.1.</span> <span class="nav-text">fiflter   The filter function transforms a collection and filters out elements that don’t satisfy the given predicate.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#map-The-map-function-applies-the-given-function-to-each-element-in-the-collection-and-collects-the-results-into-a-new-collection"><span class="nav-number">1.1.8.2.</span> <span class="nav-text">map The map function applies the given function to each element in the collection and collects the results into a new collection.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values"><span class="nav-number">1.1.8.3.</span> <span class="nav-text">filterKeys and mapKeys filter and transform the keys of a map, respectively, whereas filterValues and mapValues filter and transform the corresponding values.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#all-any-count-and-find-applying-a-predicate-to-a-collection"><span class="nav-number">1.1.8.4.</span> <span class="nav-text">all, any, count, and find: applying a predicate to a collection.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#groupBy-converting-a-list-to-a-map-of-groups"><span class="nav-number">1.1.8.5.</span> <span class="nav-text">groupBy: converting a list to a map of groups.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flatMap-and-flatten-processing-elements-in-nested-collections"><span class="nav-number">1.1.8.6.</span> <span class="nav-text">flatMap and flatten: processing elements in nested collections.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Lazy-collection-operations-sequences"><span class="nav-number">1.1.8.7.</span> <span class="nav-text">Lazy collection operations: sequences.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Passing-a-lambda-as-a-parameter-to-a-Java-method"><span class="nav-number">1.1.8.8.</span> <span class="nav-text">Passing a lambda as a parameter to a Java method.</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lambda"><span class="nav-number">1.</span> <span class="nav-text">Lambda</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><span class="nav-number">1.1.</span> <span class="nav-text">1) effectively, pass a block of code directly as a method parameter.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-provide-a-good-convenient-library-for-working-with-collections"><span class="nav-number">1.2.</span> <span class="nav-text">2) provide a good, convenient library for working with collections.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments"><span class="nav-number">1.3.</span> <span class="nav-text">3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-As-with-local-variables-if-the-type-of-a-lambda-parameter-can-be-inferred-you-don’t-need-to-specify-it-explicitly"><span class="nav-number">1.4.</span> <span class="nav-text">4) As with local variables, if the type of a lambda parameter can be inferred, you don’t need to specify it explicitly.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Runs-the-code-in-the-lambda"><span class="nav-number">1.5.</span> <span class="nav-text">5)Runs the code in the lambda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-you-can-access-the-parameters-of-that-function-as-well-as-the-local-variables-declared-before-the-lambda"><span class="nav-number">1.6.</span> <span class="nav-text">6) you can access the parameters of that function as well as the local variables declared before the lambda.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-The-member-reference-salute-is-passed-as-an-argument-to-the-library-function-run-which-calls-the-corresponding-function"><span class="nav-number">1.7.</span> <span class="nav-text">7) The member reference ::salute is passed as an argument to the library function run, which calls the corresponding function.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8）Functional-APIs-for-collections"><span class="nav-number">1.8.</span> <span class="nav-text">8）Functional APIs for collections.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#fiflter-The-filter-function-transforms-a-collection-and-filters-out-elements-that-don’t-satisfy-the-given-predicate"><span class="nav-number">1.8.1.</span> <span class="nav-text">fiflter   The filter function transforms a collection and filters out elements that don’t satisfy the given predicate.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#map-The-map-function-applies-the-given-function-to-each-element-in-the-collection-and-collects-the-results-into-a-new-collection"><span class="nav-number">1.8.2.</span> <span class="nav-text">map The map function applies the given function to each element in the collection and collects the results into a new collection.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values"><span class="nav-number">1.8.3.</span> <span class="nav-text">filterKeys and mapKeys filter and transform the keys of a map, respectively, whereas filterValues and mapValues filter and transform the corresponding values.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#all-any-count-and-find-applying-a-predicate-to-a-collection"><span class="nav-number">1.8.4.</span> <span class="nav-text">all, any, count, and find: applying a predicate to a collection.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#groupBy-converting-a-list-to-a-map-of-groups"><span class="nav-number">1.8.5.</span> <span class="nav-text">groupBy: converting a list to a map of groups.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flatMap-and-flatten-processing-elements-in-nested-collections"><span class="nav-number">1.8.6.</span> <span class="nav-text">flatMap and flatten: processing elements in nested collections.</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9）Lazy-collection-operations-sequences"><span class="nav-number">1.9.</span> <span class="nav-text">9）Lazy collection operations: sequences.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10）Passing-a-lambda-as-a-parameter-to-a-Java-method"><span class="nav-number">1.10.</span> <span class="nav-text">10）Passing a lambda as a parameter to a Java method.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11）SAM-constructors-explicit-conversion-of-lambdas-to-functional-interfaces"><span class="nav-number">1.11.</span> <span class="nav-text">11）SAM constructors: explicit conversion of lambdas to functional interfaces.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Lambdas-with-receivers-with-and-apply"><span class="nav-number">1.12.</span> <span class="nav-text">12)Lambdas with receivers: with and apply</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-with-function-you-can-use-to-perform-multiple-operations-on-the-same-object-without-repeating-its-name"><span class="nav-number">1.12.1.</span> <span class="nav-text">The with function:you can use to perform multiple operations on the same object without repeating its name</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-apply-function-The-apply-function-works-almost-exactly-the-same-as-with-the-only-difference-is-that-apply-always-returns-the-object-passed-to-it-as-a-parameter-in-other-words-the-receiverobject"><span class="nav-number">1.13.</span> <span class="nav-text">the apply function:The apply function works almost exactly the same as with; the only difference is that apply() always returns the object passed to it as a parameter (in other words, the receiverobject).</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SUMMARY"><span class="nav-number">2.</span> <span class="nav-text">SUMMARY</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Lambdas-allow-you-to-pass-chunks-of-code-as-parameters-to-methods"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">* Lambdas allow you to pass chunks of code as parameters to methods.</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -559,11 +602,11 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  Thème -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
