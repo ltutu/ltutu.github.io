@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="kotlin in actionLambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click */ } 2) provide a good, convenient library for working">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/07/19/kotlin之lambda表达式/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="kotlin in actionLambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click */ } 2) provide a good, convenient library for working">
+<meta property="og:updated_time" content="2017-07-20T03:41:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="kotlin in actionLambda1) effectively, pass a block of code directly as a method parameter.Example:button.setOnClickListener { /* actions on click */ } 2) provide a good, convenient library for working">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/19/kotlin之lambda表达式/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title> | Hexo</title>
   
 
 
@@ -157,9 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/19/kotlin之lambda表达式/" itemprop="url">Non titré</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -319,9 +319,7 @@
       
 
       
-        
-          
-            <h1 id="kotlin-in-action"><a href="#kotlin-in-action" class="headerlink" title="kotlin in action"></a>kotlin in action</h1><h2 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h2><h3 id="1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><a href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter" class="headerlink" title="1) effectively, pass a block of code directly as a method parameter."></a>1) effectively, pass a block of code directly as a method parameter.</h3><p>Example:<br><code>button.setOnClickListener { /* actions on click */ }</code></p>
+        <h1 id="kotlin-in-action"><a href="#kotlin-in-action" class="headerlink" title="kotlin in action"></a>kotlin in action</h1><h2 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h2><h3 id="1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><a href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter" class="headerlink" title="1) effectively, pass a block of code directly as a method parameter."></a>1) effectively, pass a block of code directly as a method parameter.</h3><p>Example:<br><code>button.setOnClickListener { /* actions on click */ }</code></p>
 <h3 id="2-provide-a-good-convenient-library-for-working-with-collections"><a href="#2-provide-a-good-convenient-library-for-working-with-collections" class="headerlink" title="2) provide a good, convenient library for working with collections."></a>2) provide a good, convenient library for working with collections.</h3><p>Example:<br><code>val people = listOf(Person(&quot;Alice&quot;, 29), Person(&quot;Bob&quot;, 31))
 people.maxBy { it.age })</code><br>If a lambda just delegates to a method or property, it can be replaced by a member reference:<br><code>people.maxBy(Person::age)</code></p>
 <h3 id="3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments"><a href="#3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments" class="headerlink" title="3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):"></a>3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):</h3><p>Example:<br><code>val sum = { x: Int, y: Int -&gt; x + y }
@@ -365,20 +363,27 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
   &amp;gt; 5050</code></p>
 <h4 id="Passing-a-lambda-as-a-parameter-to-a-Java-method"><a href="#Passing-a-lambda-as-a-parameter-to-a-Java-method" class="headerlink" title="Passing a lambda as a parameter to a Java method."></a>Passing a lambda as a parameter to a Java method.</h4><p>Example:<br>java<br><code>void postponeComputation(int delay, Runnable computation);</code><br>kotlin<br><code>postponeComputation(1000) { println(42) }</code></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -386,262 +391,38 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/17/first-blog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liushuheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/17/first-blog/" itemprop="url">Macbook 初体验</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posté le</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-17T11:53:00+08:00">
-                2017-07-17
-              </time>
+              <a href="/2017/07/17/first-blog/" rel="next" title="Macbook 初体验">
+                <i class="fa fa-chevron-left"></i> Macbook 初体验
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>拿到手第一感觉就是 很轻很好看<br>开盖立马自动开机 开机速度很快 大概七八秒就ok了</p>
-<p>键盘打字很舒服 屏幕很惊艳 外放也还行<br>四个雷电接口唯一好处大概就是可以360度螺旋充电==<br>touchbar感觉作用不大 反而用android studio时按快捷键必须要fn一起按 略蛋疼<br>触摸板无敌强大 基本不玩游戏可以告别鼠标了</p>
-<p>软件方面 finder文件管理还是有点不习惯</p>
-<p>终端装了homebrew和brew cask  但是没感觉到强大之处 反正网页安装软件也没多麻烦==。反而brew安装软件自动是最新版甚至是开发版 可能会导致某些兼容性问题  昨天安装nodejs后搭建hexo时就出现了问题  然后stackoverflow上大佬说把brew安装的删了官网重新下载稳定版就没事了  照做果然OK了==</p>
-<p>然后装了oh-my-zsh 告别terminal  但是除了界面好看一点以外尚未挖掘到牛逼的地方😄</p>
-<p>再是被誉为mac第一神器的Alfred 3  嗯 正在琢磨中  买不起powerpack 是不是就约等于spotlight了==</p>
-<p>macdown很好用 毕竟这篇 blog就是Macdown写的 哈哈</p>
-<p>然后几个问题 android studio直接安装3.0的 但是没办法安装到launchpad里 每次启动还要从下载里面启动 很蛋疼 不知道有没有解决办法==<br>还有就是chrome中将默认所搜引擎设置为google 即使挂了代理 网速也很快的时候 搜索栏搜索都会慢的抠脚😩</p>
-<p>再就是为什么我的markdown文档排版可以如此之丑。。。</p>
-<p>最后抓紧时间立flag 以后这个blog 应该会保证每周至少更两篇<br>当然不一定是我原创的 看到有用的文章（关于android） 会摘抄来 再附几句瞎bb 哈哈</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liushuheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/17/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posté le</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-17T01:47:59+08:00">
-                2017-07-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -649,6 +430,10 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -669,8 +454,17 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table Des Matières
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Ensemble
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -723,6 +517,22 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#kotlin-in-action"><span class="nav-number">1.</span> <span class="nav-text">kotlin in action</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lambda"><span class="nav-number">1.1.</span> <span class="nav-text">Lambda</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-effectively-pass-a-block-of-code-directly-as-a-method-parameter"><span class="nav-number">1.1.1.</span> <span class="nav-text">1) effectively, pass a block of code directly as a method parameter.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-provide-a-good-convenient-library-for-working-with-collections"><span class="nav-number">1.1.2.</span> <span class="nav-text">2) provide a good, convenient library for working with collections.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-You-can-store-a-lambda-expression-in-a-variable-and-then-treat-this-variable-like-a-normal-function-call-it-with-the-corresponding-arguments"><span class="nav-number">1.1.3.</span> <span class="nav-text">3) You can store a lambda expression in a variable and then treat this variable like a normal function (call it with the corresponding arguments):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-As-with-local-variables-if-the-type-of-a-lambda-parameter-can-be-inferred-you-don’t-need-to-specify-it-explicitly"><span class="nav-number">1.1.4.</span> <span class="nav-text">4) As with local variables, if the type of a lambda parameter can be inferred, you don’t need to specify it explicitly.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Runs-the-code-in-the-lambda"><span class="nav-number">1.1.5.</span> <span class="nav-text">5)Runs the code in the lambda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-you-can-access-the-parameters-of-that-function-as-well-as-the-local-variables-declared-before-the-lambda"><span class="nav-number">1.1.6.</span> <span class="nav-text">6) you can access the parameters of that function as well as the local variables declared before the lambda.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-The-member-reference-salute-is-passed-as-an-argument-to-the-library-function-run-which-calls-the-corresponding-function"><span class="nav-number">1.1.7.</span> <span class="nav-text">7) The member reference ::salute is passed as an argument to the library function run, which calls the corresponding function.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8）Functional-APIs-for-collections"><span class="nav-number">1.1.8.</span> <span class="nav-text">8）Functional APIs for collections.</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#fiflter-The-filter-function-transforms-a-collection-and-filters-out-elements-that-don’t-satisfy-the-given-predicate"><span class="nav-number">1.1.8.1.</span> <span class="nav-text">fiflter   The filter function transforms a collection and filters out elements that don’t satisfy the given predicate.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#map-The-map-function-applies-the-given-function-to-each-element-in-the-collection-and-collects-the-results-into-a-new-collection"><span class="nav-number">1.1.8.2.</span> <span class="nav-text">map The map function applies the given function to each element in the collection and collects the results into a new collection.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filterKeys-and-mapKeys-filter-and-transform-the-keys-of-a-map-respectively-whereas-filterValues-and-mapValues-filter-and-transform-the-corresponding-values"><span class="nav-number">1.1.8.3.</span> <span class="nav-text">filterKeys and mapKeys filter and transform the keys of a map, respectively, whereas filterValues and mapValues filter and transform the corresponding values.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#all-any-count-and-find-applying-a-predicate-to-a-collection"><span class="nav-number">1.1.8.4.</span> <span class="nav-text">all, any, count, and find: applying a predicate to a collection.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#groupBy-converting-a-list-to-a-map-of-groups"><span class="nav-number">1.1.8.5.</span> <span class="nav-text">groupBy: converting a list to a map of groups.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flatMap-and-flatten-processing-elements-in-nested-collections"><span class="nav-number">1.1.8.6.</span> <span class="nav-text">flatMap and flatten: processing elements in nested collections.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Lazy-collection-operations-sequences"><span class="nav-number">1.1.8.7.</span> <span class="nav-text">Lazy collection operations: sequences.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Passing-a-lambda-as-a-parameter-to-a-Java-method"><span class="nav-number">1.1.8.8.</span> <span class="nav-text">Passing a lambda as a parameter to a Java method.</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -836,10 +646,10 @@ Error: 404 Not Found</code><br>Unlike Java, allows you to access non-final varia
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
