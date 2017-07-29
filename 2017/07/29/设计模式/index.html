@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="设计模式," />
 
 
 
@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="设计模式（一）一 应用最广的设计模式——单例模式定义：确保每个类只有一个实例，而且自行实例华并向整个系统提供这个实例。 应用场景：确保某个类有且只有一个对象的场景，避免产生多个对象消耗过多的资源，或者某种类型的对象只应该有且只有一个。 实现方式： 构造函数不对外开放，一般为private，通过一个静态方法或者枚举返回单例类对象。在这个获取的过程中必须保证线程安全、防止反序列化导致重新生成实例对象等">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/07/17/hello-world/index.html">
+<meta property="og:title" content="设计模式（一）">
+<meta property="og:url" content="http://yoursite.com/2017/07/29/设计模式/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-07-16T17:47:59.000Z">
+<meta property="og:description" content="设计模式（一）一 应用最广的设计模式——单例模式定义：确保每个类只有一个实例，而且自行实例华并向整个系统提供这个实例。 应用场景：确保某个类有且只有一个对象的场景，避免产生多个对象消耗过多的资源，或者某种类型的对象只应该有且只有一个。 实现方式： 构造函数不对外开放，一般为private，通过一个静态方法或者枚举返回单例类对象。在这个获取的过程中必须保证线程安全、防止反序列化导致重新生成实例对象等">
+<meta property="og:updated_time" content="2017-07-29T08:22:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="设计模式（一）">
+<meta name="twitter:description" content="设计模式（一）一 应用最广的设计模式——单例模式定义：确保每个类只有一个实例，而且自行实例华并向整个系统提供这个实例。 应用场景：确保某个类有且只有一个对象的场景，避免产生多个对象消耗过多的资源，或者某种类型的对象只应该有且只有一个。 实现方式： 构造函数不对外开放，一般为private，通过一个静态方法或者枚举返回单例类对象。在这个获取的过程中必须保证线程安全、防止反序列化导致重新生成实例对象等">
 
 
 
@@ -130,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/17/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/29/设计模式/"/>
 
 
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>设计模式（一） | Hexo</title>
   
 
 
@@ -255,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/29/设计模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="liushuheng">
@@ -272,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">设计模式（一）</h1>
         
 
         <div class="post-meta">
@@ -284,8 +285,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-17T01:47:59+08:00">
-                2017-07-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-29T16:22:00+08:00">
+                2017-07-29
               </time>
             
 
@@ -319,16 +320,13 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <h1 id="设计模式（一）"><a href="#设计模式（一）" class="headerlink" title="设计模式（一）"></a>设计模式（一）</h1><h2 id="一-应用最广的设计模式——单例模式"><a href="#一-应用最广的设计模式——单例模式" class="headerlink" title="一 应用最广的设计模式——单例模式"></a>一 应用最广的设计模式——单例模式</h2><p>定义：确保每个类只有一个实例，而且自行实例华并向整个系统提供这个实例。</p>
+<p>应用场景：确保某个类有且只有一个对象的场景，避免产生多个对象消耗过多的资源，或者某种类型的对象只应该有且只有一个。</p>
+<p>实现方式： 构造函数不对外开放，一般为private，通过一个静态方法或者枚举返回单例类对象。在这个获取的过程中必须保证线程安全、防止反序列化导致重新生成实例对象等问题。<br>1.懒汉模式<br>2.Double Check Lock(DCL)实现<br>3.静态内部类实现<br>4.枚举单例<br>5.适用容器实现</p>
+<h2 id="二-自由扩展你的项目——Builder模式"><a href="#二-自由扩展你的项目——Builder模式" class="headerlink" title="二 自由扩展你的项目——Builder模式"></a>二 自由扩展你的项目——Builder模式</h2><p>定义：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</p>
+<p>使用场景：1.相同的方法，不同的执行顺序，产生不同的时间结果时；<br>        2.多个部件或零件，都可以装配到一个对象中，但是产生的运行结果又不相同时；<br>        3.产品类非常复杂，或者产品类中的调用顺序不同产生了不同的作用。<br>        4.当初始化一个对象特别复杂，如参数多，且很多参数都有默认值。</p>
+<p>实现方式：抽象Builder类——&gt;具体Builder类<br>Builder通常为链式调用，关键点在于每个setter方法都return this。</p>
+<h2 id="三-使程序运行更高效——原型模式"><a href="#三-使程序运行更高效——原型模式" class="headerlink" title="三 使程序运行更高效——原型模式"></a>三 使程序运行更高效——原型模式</h2>
       
     </div>
 
@@ -355,6 +353,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+          
+        </div>
+      
 
       
       
@@ -364,15 +368,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/20/kotlin之lambda表达式/" rel="next" title="kotlin之lambda表达式">
+                <i class="fa fa-chevron-left"></i> kotlin之lambda表达式
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/17/first-blog/" rel="prev" title="Macbook 初体验">
-                Macbook 初体验 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -493,7 +497,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式（一）"><span class="nav-number">1.</span> <span class="nav-text">设计模式（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-应用最广的设计模式——单例模式"><span class="nav-number">1.1.</span> <span class="nav-text">一 应用最广的设计模式——单例模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-自由扩展你的项目——Builder模式"><span class="nav-number">1.2.</span> <span class="nav-text">二 自由扩展你的项目——Builder模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-使程序运行更高效——原型模式"><span class="nav-number">1.3.</span> <span class="nav-text">三 使程序运行更高效——原型模式</span></a></li></ol></li></ol></div>
             
 
           </div>
