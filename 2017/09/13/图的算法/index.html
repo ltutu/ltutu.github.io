@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="图的算法总结emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。 ####图的遍历：深度优先和广度优先 深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构 广度优先采用队列的数据结构 ####最小生成树：Prim算法和Kruskal算法这两个算法的核心">
+<meta name="description" content="图的算法总结emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。 图的遍历：深度优先和广度优先深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构 广度优先采用队列的数据结构 最小生成树：Prim算法和Kruskal算法这两个算法的核心算法思想都是贪心算">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="图的算法">
 <meta property="og:url" content="http://yoursite.com/2017/09/13/图的算法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="图的算法总结emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。 ####图的遍历：深度优先和广度优先 深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构 广度优先采用队列的数据结构 ####最小生成树：Prim算法和Kruskal算法这两个算法的核心">
-<meta property="og:updated_time" content="2017-09-13T12:28:53.000Z">
+<meta property="og:description" content="图的算法总结emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。 图的遍历：深度优先和广度优先深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构 广度优先采用队列的数据结构 最小生成树：Prim算法和Kruskal算法这两个算法的核心算法思想都是贪心算">
+<meta property="og:updated_time" content="2017-09-13T12:30:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图的算法">
-<meta name="twitter:description" content="图的算法总结emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。 ####图的遍历：深度优先和广度优先 深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构 广度优先采用队列的数据结构 ####最小生成树：Prim算法和Kruskal算法这两个算法的核心">
+<meta name="twitter:description" content="图的算法总结emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。 图的遍历：深度优先和广度优先深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构 广度优先采用队列的数据结构 最小生成树：Prim算法和Kruskal算法这两个算法的核心算法思想都是贪心算">
 
 
 
@@ -321,20 +321,17 @@
 
       
         <h2 id="图的算法总结"><a href="#图的算法总结" class="headerlink" title="图的算法总结"></a>图的算法总结</h2><h4 id="emmmmmm前天去面试。被问到几个图的算法-发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。"><a href="#emmmmmm前天去面试。被问到几个图的算法-发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。" class="headerlink" title="emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。"></a>emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。</h4><p>常见的图的问题大概可以分为三类：图的遍历，求最小生成树和最短路径。</p>
-<p>####图的遍历：深度优先和广度优先</p>
-<p>深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构</p>
+<h4 id="图的遍历：深度优先和广度优先"><a href="#图的遍历：深度优先和广度优先" class="headerlink" title="图的遍历：深度优先和广度优先"></a>图的遍历：深度优先和广度优先</h4><p>深度优先又有递归和非递归两种实现方法，非递归采用栈的数据结构</p>
 <p>广度优先采用队列的数据结构</p>
-<p>####最小生成树：Prim算法和Kruskal算法<br>这两个算法的核心算法思想都是贪心算法</p>
+<h4 id="最小生成树：Prim算法和Kruskal算法"><a href="#最小生成树：Prim算法和Kruskal算法" class="headerlink" title="最小生成树：Prim算法和Kruskal算法"></a>最小生成树：Prim算法和Kruskal算法</h4><p>这两个算法的核心算法思想都是贪心算法</p>
 <p>Prim算法   初始新建一个空的顶点集V和边集E，从图的任意一个顶点出发，遍历寻找其他节点中和该顶点距离最近的边，将这个边加入E，对应顶点加入V，然后寻找不在V中顶点与V中顶点距离最近的边，边加入E，顶点加入V，循环直到所有顶点都加入了V中。</p>
 <p>Kruskal算法   初始新建一个空的边集E，直接将图中权值最小的边加入E。然后再在剩余的边中找到权值最小的边加入E，如果新加入的边的两个顶点都在E中的同一连通分量，则舍弃（判断方法是建一个数组，索引对应顶点，值为以该顶点为尾节点的头节点值。如果把每个连通分量看成一棵树，可以理解为存储节点的父节点。则每次加入新边的时候对头尾节点寻根，如果根节点是同一节点则舍弃）。</p>
-<p>####最短路径：Dijkstra算法和Floyd算法</p>
-<p>Dijkstra算法  从起始节点（V0）开始，寻找离该节点最近的节点（设为V1），然后再遍历V1的邻接节点（设为V2），如果V0到V1再到V2的值小于V0直接到该节点的值（初始假设V0到其不相邻的边的权值为无穷大），则将该值赋值给V0-V2；再遍历V0的所有“邻接”节点，循环上述步骤直至遍历完所有节点。</p>
+<h4 id="最短路径：Dijkstra算法和Floyd算法"><a href="#最短路径：Dijkstra算法和Floyd算法" class="headerlink" title="最短路径：Dijkstra算法和Floyd算法"></a>最短路径：Dijkstra算法和Floyd算法</h4><p>Dijkstra算法  从起始节点（V0）开始，寻找离该节点最近的节点（设为V1），然后再遍历V1的邻接节点（设为V2），如果V0到V1再到V2的值小于V0直接到该节点的值（初始假设V0到其不相邻的边的权值为无穷大），则将该值赋值给V0-V2；再遍历V0的所有“邻接”节点，循环上述步骤直至遍历完所有节点。</p>
 <p>Floyd算法   Floyd算法是典型的动态规划的算法。算法的转移方程就是<br><code>dp[i][j]=Math.min(dp[i][j],dp[i][k]+dp[k][j]</code><br>外面三层嵌套循环，几行代码搞定。。。<br>当然如果要记录最短路径，只需要新建一个数组用来储存前驱节点的值。</p>
-<p>####图的其他算法：<br>拓扑排序：核心思想 每次删除图的入度为0的节点和以其为节点的边</p>
+<h4 id="图的其他算法："><a href="#图的其他算法：" class="headerlink" title="图的其他算法："></a>图的其他算法：</h4><p>拓扑排序：核心思想 每次删除图的入度为0的节点和以其为节点的边</p>
 <p>事件发生最早时间：核心状态方程<br><code>dp[i]=Math.max(dp[j]+len&lt;j,i&gt;)</code></p>
 <p>时间最晚发生时间：核心状态方程<br><code>dp[i]=Math.max(dp[j]+len&lt;i,j&gt;)</code></p>
-<p>###代码懒得敲了。。。大概就是这些了。。。</p>
-
+<h3 id="代码懒得敲了。。。大概就是这些了。。。"><a href="#代码懒得敲了。。。大概就是这些了。。。" class="headerlink" title="代码懒得敲了。。。大概就是这些了。。。"></a>代码懒得敲了。。。大概就是这些了。。。</h3>
       
     </div>
 
@@ -505,7 +502,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#图的算法总结"><span class="nav-number">1.</span> <span class="nav-text">图的算法总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#emmmmmm前天去面试。被问到几个图的算法-发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。"><span class="nav-number">1.0.1.</span> <span class="nav-text">emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#图的算法总结"><span class="nav-number">1.</span> <span class="nav-text">图的算法总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#emmmmmm前天去面试。被问到几个图的算法-发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。"><span class="nav-number">1.0.1.</span> <span class="nav-text">emmmmmm前天去面试。被问到几个图的算法 发现自己已经忘得差不多了。很是尴尬。。回来把算法又翻了一遍，大概总结一下。。。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的遍历：深度优先和广度优先"><span class="nav-number">1.0.2.</span> <span class="nav-text">图的遍历：深度优先和广度优先</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最小生成树：Prim算法和Kruskal算法"><span class="nav-number">1.0.3.</span> <span class="nav-text">最小生成树：Prim算法和Kruskal算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最短路径：Dijkstra算法和Floyd算法"><span class="nav-number">1.0.4.</span> <span class="nav-text">最短路径：Dijkstra算法和Floyd算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的其他算法："><span class="nav-number">1.0.5.</span> <span class="nav-text">图的其他算法：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码懒得敲了。。。大概就是这些了。。。"><span class="nav-number">1.1.</span> <span class="nav-text">代码懒得敲了。。。大概就是这些了。。。</span></a></li></ol></li></ol></div>
             
 
           </div>
